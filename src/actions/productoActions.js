@@ -5,8 +5,28 @@ import {
 } from "../types";
 
 // Crear nuevos productos
-export function crearNuevoProductoAction() {
-  return () => {
-    console.log("desde action");
+export function crearNuevoProductoAction(producto) {
+  return dispatch => {
+    dispatch(agregarProducto());
+
+    try {
+      dispatch(agregarProductoExito(producto));
+    } catch (error) {
+      dispatch(agregarProductoError());
+    }
   };
 }
+
+const agregarProducto = () => ({
+  type: AGREGAR_PRODUCTO,
+  payload: true
+});
+
+// Si el producto se guarda en la base de datos
+const agregarProductoExito = producto => ({
+  type: AGREGAR_PRODUCTO_EXITO,
+  payload: producto
+});
+
+// Si huno un error
+const agregarProductoError = () => ({});
