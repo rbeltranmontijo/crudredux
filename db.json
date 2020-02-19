@@ -29,6 +29,11 @@
       "nombre": "Rib Eye 1kg",
       "precio": 1500,
       "id": 6
+    },
+    {
+      "nombre": "MERN 2",
+      "precio": 40,
+      "id": 7
     }
   ]
 }
