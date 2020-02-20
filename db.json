@@ -2,22 +2,22 @@
   "productos": [
     {
       "nombre": "Jugo de Fresa",
-      "precio": "200",
+      "precio": "400",
       "id": 5
     },
     {
       "nombre": "Rib Eye 1kg",
-      "precio": 1500,
+      "precio": "1800",
       "id": 6
     },
     {
       "nombre": "MERN 2",
-      "precio": 40,
+      "precio": "4000",
       "id": 7
     },
     {
       "nombre": "MERN 2",
-      "precio": 233,
+      "precio": "5000",
       "id": 9
     }
   ]

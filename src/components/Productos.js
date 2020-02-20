@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Swal from "sweetalert2";
 
 // Redux
 import { useSelector, useDispatch } from "react-redux";
