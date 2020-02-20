@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Swal from "sweetalert2";
 
 // Redux
 import { useSelector, useDispatch } from "react-redux";
@@ -39,7 +40,7 @@ const Productos = () => {
         </thead>
         <tbody>
           {productos.length === 0
-            ? "No hay productos"
+            ? null
             : productos.map(producto => (
                 <Producto key={producto.id} producto={producto} />
               ))}
