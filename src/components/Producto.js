@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Producto = ({ producto }) => {
   const { nombre, precio, id } = producto;
-  console.log(producto);
+  //   console.log(producto);
   return (
     <tr>
       <td>{nombre}</td>
