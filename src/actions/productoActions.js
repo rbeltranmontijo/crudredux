@@ -10,12 +10,10 @@ import {
   PRODUCTO_ELIMINADO_ERROR,
   OBTENER_PRODUCTO_EDITAR,
   COMENZAR_EDICION_PRODUCTO,
-  PRODUCTO_EDITAR_EXITO,
-  PRODUCTO_EDITAR_ERROR
+  PRODUCTO_EDITAR_EXITO
 } from "../types";
 import clienteAxios from "../config/axios";
 import Swal from "sweetalert2";
-import { func } from "prop-types";
 
 // Crear nuevos productos
 export function crearNuevoProductoAction(producto) {
